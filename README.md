@@ -1,8 +1,6 @@
 # stain-normalizer
 A color normalization method for  whole slide image(WSI) tiles, using cupy and tiffile with GPU to accerate the process, which result in a at least 100X faster speed.
 
-# How to install
-`pip install stain-normalizer `
 # Requirements
   1. cupy
   2. one GPU with according cuda installed
