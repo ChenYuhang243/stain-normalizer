@@ -1,8 +1,8 @@
 # stain-normalizer
 A GPU based color normalization method for  whole slide image(WSI) tiles, coded with cupy
-# Install
+# How to install
 `pip install stain-normalizer `
-# How to Use
+# How to use
 ```python
 from stain-normalizer import Normalizer    
 normalizer = Normalizer()
