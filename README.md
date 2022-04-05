@@ -6,7 +6,7 @@ A color normalization method for  whole slide image(WSI) tiles, using cupy and t
   2. one GPU with according cuda installed
 # How to use
 ```python
-from stain-normalizer import Normalizer    
+from stain-normalizer import Normalizer  #if u copy py file in working directory
 normalizer = Normalizer()
 normalizer.fit(template_tile)     
 normalizer.normalize(target_tile)
