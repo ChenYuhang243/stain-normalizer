@@ -6,10 +6,13 @@ A color normalization method for  whole slide image(WSI) tiles, using cupy and t
   2. one GPU with according cuda installed
 # How to use
 ```python
+import tifffile as tif
 from stain-normalizer import Normalizer  #if u copy stain-normalizer.py file in working directory
+template_tile = tif.TiffSeqence(template_path).asarray() ## u can choose one or several template tiles, but make sure shape of template_tile is 4-D array
+target_tile = tif.imread(target_tile_lists) ## return a 4-D array
 normalizer = Normalizer()
 normalizer.fit(template_tile)     
-normalizer.normalize(target_tile)
+normalizer.normalize(target_tile) 
 ```
 # Example Usage
 
