@@ -1,5 +1,5 @@
 # stain-normalizer
-A GPU based color normalization method for  whole slide image(WSI) tiles, coded with cupy and tensorflow, inspired by torchstain.
+A GPU based color normalization method for  whole slide image(WSI) tiles, coded with cupy
 # Install
 `pip install stain-normalizer `
 # How to Use
