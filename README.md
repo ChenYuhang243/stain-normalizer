@@ -25,7 +25,7 @@ normalizer.normalize(target_tile)
   2. use multi GPU. Cupy uses one GPU by default.
   3. Use LMDB or H5DF to load or save image. Or save as numpy format data ".npy". If use tensorflow, tfrecords is suggested. Single image format is least recommeded.
   4. Use multiprocessing or simply cut images into several chunks and run several jobs.
-  5. tensorflow tensors cannot be directly convert to cupy arrays,  
+
   
 # Other implements
   1. pytorch implement: https://github.com/EIDOSlab/torchstain
