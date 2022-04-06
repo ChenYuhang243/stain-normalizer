@@ -15,7 +15,12 @@ normalizer.fit(template_tile)
 normalizer.normalize(target_tile) 
 ```
 # Example Usage
-
+# Comparement
+  * read 2000 tiles(512* 512 * 3) into numpy
+    - tifffile.imread read: 1m17s
+    - Image.open read: 9m38s
+    - cv2.imread : 10m46s
+  * color normalization 30k tiles with chunksize=100,V100(16G) without writing tiles to disk: 21m 46s.
 # Suggestions
   1. use tifffile to load image
   2. use multi GPU. Cupy uses one GPU by default.
