@@ -14,7 +14,6 @@ normalizer = Normalizer()
 normalizer.fit(template_tile)     
 normalizer.normalize(target_tile) 
 ```
-# Example Usage
 # Comparement
   * read 2000 tiles(512* 512 * 3) into numpy
     - tifffile.imread read: 1m17s
@@ -26,10 +25,14 @@ normalizer.normalize(target_tile)
   2. use multi GPU. Cupy uses one GPU by default.
   3. Use LMDB or H5DF to load or save image. Or save as numpy format data ".npy". If use tensorflow, tfrecords is suggested. Single image format is least recommeded.
   4. Use multiprocessing or simply cut images into several chunks and run several jobs.
+  5. tensorflow tensors cannot be directly convert to cupy arrays,  
   
 # Other implements
   1. pytorch implement: https://github.com/EIDOSlab/torchstain
-  2. 
+  2. numpy: https://github.com/schaugf/HEnorm_python
+  3. matlab: https://github.com/mitkovetta/staining-normalization
+  4. python modules with different methods:https://github.com/Peter554/StainTools
+  
 # Referrence
 [1] Macenko, Marc, et al. "A method for normalizing histology slides for quantitative analysis." 2009 IEEE International Symposium on Biomedical Imaging: From Nano to Macro. IEEE, 2009.
 
